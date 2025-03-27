@@ -4,8 +4,18 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+    redirectTo: 'intro',
+    pathMatch: 'full',
+  },
+  {
+    path: 'intro',
+    loadChildren: () => import('./pages/intro/intro.module').then(m => m.IntroPageModule)
+  },
+  {
+    path: 'app',
+    loadChildren: () => import('./pages/layout/layout.module').then(m => m.LayoutPageModule)
+  },
+
 ];
 @NgModule({
   imports: [
@@ -13,4 +23,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
