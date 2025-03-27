@@ -5,12 +5,24 @@
 }
 
 .active-link {
-    border-left: 4px solid var(--ion-color-gold);
-    background-color: var(--ion-color-lightgrey);
+    ion-icon {
+        color: var(--ion-color-gold);
+        rotate: 90deg;
+    }
+
+    background-color: #aa913d37;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 mat-icon {
-    margin-left: 8px;
+    margin-left: 7px;
 }
 
 ion-split-pane {
@@ -39,10 +51,6 @@ ion-split-pane {
 
     .menuItem {
         border-left: 4px solid transparent;
-    }
-
-    .active-link {
-        border-left: 4px solid var(--ion-color-gold);
     }
 
     .divider {

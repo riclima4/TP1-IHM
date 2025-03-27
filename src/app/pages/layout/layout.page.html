@@ -3,7 +3,8 @@
   <ion-menu contentId="main" swipeGesture="false" [side]="isMobile ? 'end':'start'">
     <ion-header class="ion-no-border bg-color-white">
       <div class="flex justify-content-center align-items-center gap-6 mt-8">
-        <img *ngIf="closedMenu" src="/assets/icon/favicon.png" alt="Logo Viana" width="40" height="40" class="mb-20">
+        <img *ngIf="closedMenu" src="/assets/images/logoGrandeFilled.png" alt="Logo Viana" width="40" height="40"
+          class="mb-20">
         <img *ngIf="!closedMenu" src="/assets/images/logoGrandeFilled.png" alt="Logo Viana" height="60">
 
       </div>
@@ -17,9 +18,8 @@
             <div class="ion-padding">
               <div class="menuItem flex gap-6 addPointer h-40 mb-5" routerLink="/app/home" routerDirection="root"
                 routerLinkActive="active-link">
-                <mat-icon class="material-symbols-outlined color-primary align-self-center">home</mat-icon>
-                <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center"
-                  color="primary">Dashboard</ion-text>
+                <mat-icon class="material-symbols-outlined color-gold align-self-center">home</mat-icon>
+                <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center" color="primary">Início</ion-text>
               </div>
 
             </div>

@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { UtilsService } from 'src/app/services/utils/utils.service';
 
 @Component({
   selector: 'app-layout',
@@ -15,6 +16,7 @@ export class LayoutPage implements OnInit {
 
   constructor(
     private cdr: ChangeDetectorRef,
+    private utilsService: UtilsService,
   ) { }
 
   ngOnInit() {
@@ -53,5 +55,10 @@ export class LayoutPage implements OnInit {
       this.resizeObserver.disconnect();
     }
   }
+
+  toggleMenu() {
+    this.utilsService.toggleMenu();
+  }
+
 
 }
