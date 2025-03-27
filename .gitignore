@@ -70,4 +70,6 @@ testem.log
 Thumbs.db
 
 resources/android/**/*
-resources/**
+/resources
+/ios
+/icons
