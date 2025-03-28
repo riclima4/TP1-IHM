@@ -16,6 +16,27 @@ const routes: Routes = [
         path: 'home',
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
+      {
+        path: 'executive',
+        loadChildren: () => import('../executive/executive.module').then(m => m.ExecutivePageModule)
+      },
+      {
+        path: 'interestPoints',
+        loadChildren: () => import('../interest-points/interest-points.module').then(m => m.InterestPointsPageModule)
+      },
+      {
+        path: 'agenda',
+        loadChildren: () => import('../agenda/agenda.module').then(m => m.AgendaPageModule)
+      },
+      {
+        path: 'about',
+        loadChildren: () => import('../about/about.module').then(m => m.AboutPageModule)
+      },
+      {
+        path: 'history',
+        loadChildren: () => import('../history/history.module').then(m => m.HistoryPageModule)
+      },
+
 
     ]
   },

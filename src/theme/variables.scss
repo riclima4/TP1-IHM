@@ -2,7 +2,7 @@
 // http://ionicframework.com/docs/theming/
 
 :root {
-    --ion-background-color: #F9FAFB;
+    --ion-background-color: var(--ion-color-light);
     --ion-font-family: 'DMsans';
 
     --ion-color-gold: #AA903D;

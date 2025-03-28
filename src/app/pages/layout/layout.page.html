@@ -10,7 +10,7 @@
       </div>
     </ion-header>
 
-    <ion-content class="scrollTrue bg-color-white ">
+    <ion-content class="scrollTrue bg-color-white">
       <ion-menu-toggle auto-hide="false">
         <div class=" flex flex-column justify-content-space-between mainColumn">
           <div class="scrollTrue">
@@ -20,6 +20,28 @@
                 routerLinkActive="active-link">
                 <mat-icon class="material-symbols-outlined color-gold align-self-center">home</mat-icon>
                 <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center" color="primary">Início</ion-text>
+              </div>
+              <div class="menuItem flex gap-6 addPointer h-40 mb-5" routerLink="/app/history" routerDirection="root"
+                routerLinkActive="active-link">
+                <mat-icon class="material-symbols-outlined color-gold align-self-center">history_edu</mat-icon>
+                <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center" color="primary">História</ion-text>
+              </div>
+              <div class="menuItem flex gap-6 addPointer h-40 mb-5" routerLink="/app/executive" routerDirection="root"
+                routerLinkActive="active-link">
+                <mat-icon class="material-symbols-outlined color-gold align-self-center">groups</mat-icon>
+                <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center"
+                  color="primary">Executivo</ion-text>
+              </div>
+              <div class="menuItem flex gap-6 addPointer h-40 mb-5" routerLink="/app/interestPoints"
+                routerDirection="root" routerLinkActive="active-link">
+                <mat-icon class="material-symbols-outlined color-gold align-self-center">where_to_vote</mat-icon>
+                <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center" color="primary">Pontos de
+                  Interesse</ion-text>
+              </div>
+              <div class="menuItem flex gap-6 addPointer h-40 mb-5" routerLink="/app/agenda" routerDirection="root"
+                routerLinkActive="active-link">
+                <mat-icon class="material-symbols-outlined color-gold align-self-center">event</mat-icon>
+                <ion-text *ngIf="!closedMenu" class="fs-16 fb-500 align-self-center" color="primary">Agenda</ion-text>
               </div>
 
             </div>
