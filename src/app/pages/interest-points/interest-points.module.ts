@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { InterestPointsPageRoutingModule } from './interest-points-routing.module';
 
 import { InterestPointsPage } from './interest-points.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InterestPointsPageRoutingModule
+    InterestPointsPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [InterestPointsPage]
 })
-export class InterestPointsPageModule {}
+export class InterestPointsPageModule { }

@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ExecutivePageRoutingModule } from './executive-routing.module';
 
 import { ExecutivePage } from './executive.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ExecutivePageRoutingModule
+    ExecutivePageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ExecutivePage]
 })
-export class ExecutivePageModule {}
+export class ExecutivePageModule { }

@@ -16,14 +16,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/layout/layout.module').then(m => m.LayoutPageModule)
   },
 
-
-
-
 ];
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

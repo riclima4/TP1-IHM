@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class InterestPointsPage implements OnInit {
+  title: string = 'Pontos de Interesse';
 
   constructor() { }
 
