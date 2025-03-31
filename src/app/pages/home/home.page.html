@@ -1,10 +1,73 @@
 <app-default-header [title]="title"></app-default-header>
 
-<ion-content [fullscreen]="true">
-    <swiper-container>
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
+<ion-content [fullscreen]="true" class="scrollTrue">
+    <swiper-container [slidesPerView]="1" [loop]="true" autoplay="true" [pagination]="{ clickable: true }"
+        style="height: 50vh;">
+        <swiper-slide>
+            <img src="/assets/images/igrejaMatriz.png" alt="igreja matriz"
+                style="object-fit: cover; width: 100%; height: 100%;" />
+        </swiper-slide>
+        <swiper-slide><img src="/assets/images/biblioteca.png" alt="biblioteca"
+                style="object-fit: cover; width: 100%; height: 100%;" /></swiper-slide>
+        <swiper-slide><img src="/assets/images/lota.png" alt="lota"
+                style="object-fit: cover; width: 100%; height: 100%;" /></swiper-slide>
+        <swiper-slide><img src="/assets/images/pracarepublica.png" alt="pracarepublica"
+                style="object-fit: cover; width: 100%; height: 100%;" /></swiper-slide>
     </swiper-container>
+    <div class="mainContent ion-padding flex flex-column justify-content-center">
+        <div class="flex justify-content-center">
+            <ion-text class="fs-24">Bem-vindos à capital da cultura</ion-text>
+        </div>
+        <div class="flex flex-column gap-16">
+            <div class="mt-16 flex gap-6 align-items-center">
+                <ion-icon name="triangle" color="gold"></ion-icon>
+                <ion-text class="fs-20">História</ion-text>
+            </div>
+            <ion-text class="ion-text-justify">
+                Terra de pesca e de pescadores, Viana do Castelo, com 24 quilómetros de costa litoral, tem vindo a ver
+                reconhecido o valor patrimonial, natural e paisagístico das suas praias, que têm sido alvo de diversas
+                intervenções de qualificação e valorização. Por isso, Viana do Castelo tem vindo a ser galardoada
+                consecutivamente com a Bandeira Azul, símbolo máximo da qualidade das praias.
+            </ion-text>
+            <iframe width="100%" height="315" class="border-radius-5 "
+                src="https://www.youtube.com/embed/4iKgs3NJ2ZU?si=uoHJyuvLCPp6Xr7U&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <ion-text color="gold" class="ion-text-center fs-14 addPointer lendasStyle"
+                style="text-decoration:underline;" (click)="goToLendasPDF()">Lendas de Viana</ion-text>
+        </div>
+        <div class="flex flex-column gap-16">
+            <div class="mt-16 flex gap-6 align-items-center">
+                <ion-icon name="triangle" color="gold"></ion-icon>
+                <ion-text class="fs-20">Executivo</ion-text>
+            </div>
+            <div class="flex gap-16">
+                <div class="flex flex-column gap-6">
+                    <ion-text class="fs-18 fb-500">Luís Nobre</ion-text>
+                    <ion-text class="fs-14">
+                        Atual Presidente da Câmara Municipal de Viana do Castelo. Possui larga experiência autárquica,
+                        resultante de 16 anos nas funções de Vereador deste Município e 11 anos como membro do executivo
+                        da Freguesia de Deocriste.
+                    </ion-text>
+                </div>
+                <img src="/assets/images/luis_nobre.png" class="border-radius-5" alt="Presidente">
+            </div>
+        </div>
+        <div class="flex flex-column gap-16">
+            <div class="mt-16 flex gap-6 align-items-center">
+                <ion-icon name="triangle" color="gold"></ion-icon>
+                <ion-text class="fs-20">Pontos de Interesse</ion-text>
+            </div>
+            <div>
+                <div class="flex gap-6 scrollTrue" style="flex-wrap: nowrap;">
+                    <div class="interestPointStyle" *ngFor="let poi of pointsOfInterestData">
+
+                        asdl
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </ion-content>
