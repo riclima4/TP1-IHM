@@ -4,7 +4,7 @@ export const pointsOfInterestDatasource = [
     "nome": "Santuário de Santa Luzia",
     "descricao": "Vista panorâmica incrível sobre a cidade.",
     "localizacao": "Santa Luzia",
-    "foto": null
+    "foto": "//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Santa_Luzia_Church%2C_Viana_do_Castelo%2C_Portugal.jpg/250px-Santa_Luzia_Church%2C_Viana_do_Castelo%2C_Portugal.jpg"
   },
   {
     "tipo": "monumento",
