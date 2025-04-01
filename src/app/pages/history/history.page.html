@@ -1,5 +1,64 @@
 <app-default-header [title]="title"></app-default-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="scrollTrue">
 
+    <img src="/assets/images/pracarepublica.png" alt="praça da republica"
+        style="max-height: 350px; width: 100%; object-fit: cover; ">
+    <div class="ion-padding flex flex-column justify-content-center gap-10 ">
+        <div class="flex justify-content-center">
+            <div class="flex gap-6 align-items-center">
+                <ion-icon name="triangle" color="gold"></ion-icon>
+                <ion-text class="fs-24">História</ion-text>
+            </div>
+        </div>
+        <div class="flex flex-column gap-16">
+            <div class="flex flex-column gap-6">
+                <ion-text class="fs-18 fb-500">Viana é Memória</ion-text>
+                <ion-text class="fs-14 ion-text-justify">
+                    Viana do Castelo tem raízes na Idade do Ferro e cresceu como um dos principais portos comerciais do
+                    país. Recebeu o primeiro Foral em 1258 e tornou-se cidade em 1848. Rica em história, mantém um
+                    património cultural impressionante, destacando-se a Praça da República com os seus edifícios
+                    históricos.
+                </ion-text>
+            </div>
+            <div class="flex flex-column gap-6">
+                <ion-text class="fs-18 fb-500">Viana é Modernidade</ion-text>
+                <ion-text class="fs-14 ion-text-justify">
+                    A cidade é uma referência em arquitetura contemporânea, sendo chamada de "Meca da Arquitetura" pela
+                    revista Wallpaper. Destacam-se edifícios como a Biblioteca de Siza Vieira, o Centro Cultural de
+                    Souto Moura e a Praça da Liberdade de Fernando Távora.
+                </ion-text>
+            </div>
+            <div class="flex flex-column gap-6">
+                <ion-text class="fs-18 fb-500">Viana é Turística</ion-text>
+                <ion-text class="fs-14 ion-text-justify">
+                    A cidade atrai visitantes pelo seu património, cultura e paisagens naturais. A gastronomia, com
+                    peixe fresco e vinhos verdes, é um grande atrativo. Entre os pontos turísticos, destacam-se o Museu
+                    de Artes Decorativas e o navio-museu Gil Eannes.
+                </ion-text>
+            </div>
+            <div class="flex flex-column gap-6">
+                <ion-text class="fs-18 fb-500">Viana é Mar</ion-text>
+                <ion-text class="fs-14 ion-text-justify">
+                    Com 24 km de costa, Viana do Castelo valoriza e preserva as suas praias, premiadas com Bandeira
+                    Azul. A cidade promove atividades náuticas como surf, vela, remo e canoagem, contando com centros
+                    especializados e o Centro de Mar no navio Gil Eannes.
+                </ion-text>
+            </div>
+            <div class="flex flex-column gap-6">
+                <ion-text class="fs-18 fb-500">Viana é Cultura</ion-text>
+                <ion-text class="fs-14 ion-text-justify">
+                    A música e o folclore são elementos essenciais da identidade de Viana. O traje tradicional e a
+                    ourivesaria, com o famoso Coração de Viana, são símbolos reconhecidos internacionalmente. A Romaria
+                    d'Agonia, em agosto, é o ponto alto das festividades culturais.
+                </ion-text>
+            </div>
+            <div class="ion-text-center addPointer" (click)="openFullImg(foto)">
+                <img [src]="foto" alt="Avenida Viana do Castelo" class="border-radius-5">
+                <ion-text color="darkgrey" class="ion-text-center fs-12">
+                    Avenida Viana do Castelo (Antiga)
+                </ion-text>
+            </div>
+        </div>
+    </div>
 </ion-content>

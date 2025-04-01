@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { pointsOfInterestDatasource } from 'src/app/data/pointsOfInterestDatasource';
 
 @Component({
@@ -12,7 +13,9 @@ export class HomePage implements OnInit {
 
   pointsOfInterestData: any[] = pointsOfInterestDatasource;
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit() {
   }

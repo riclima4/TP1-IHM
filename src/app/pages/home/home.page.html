@@ -14,12 +14,12 @@
         <swiper-slide><img src="/assets/images/pracarepublica.png" alt="pracarepublica"
                 style="object-fit: cover; width: 100%; height: 100%;" /></swiper-slide>
     </swiper-container>
-    <div class="mainContent ion-padding flex flex-column justify-content-center">
+    <div class="mainContent ion-padding flex flex-column justify-content-center gap-16">
         <div class="flex justify-content-center">
             <ion-text class="fs-24">Bem-vindos à capital da cultura</ion-text>
         </div>
         <div class="flex flex-column gap-16">
-            <div class="mt-16 flex gap-6 align-items-center">
+            <div class=" flex gap-6 align-items-center">
                 <ion-icon name="triangle" color="gold"></ion-icon>
                 <ion-text class="fs-20">História</ion-text>
             </div>
@@ -38,9 +38,16 @@
                 style="text-decoration:underline;" (click)="goToLendasPDF()">Lendas de Viana</ion-text>
         </div>
         <div class="flex flex-column gap-16">
-            <div class="mt-16 flex gap-6 align-items-center">
-                <ion-icon name="triangle" color="gold"></ion-icon>
-                <ion-text class="fs-20">Executivo</ion-text>
+            <div class="flex justify-content-space-between align-items-center">
+
+                <div class=" flex gap-6 align-items-center">
+                    <ion-icon name="triangle" color="gold"></ion-icon>
+                    <ion-text class="fs-20">Executivo</ion-text>
+                </div>
+                <div class="flex gap-6 align-items-center addPointer seeMore" routerLink="/app/executive">
+                    <ion-text>Ver mais </ion-text>
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </div>
             </div>
             <div class="flex gap-16">
                 <div class="flex flex-column gap-6">
@@ -55,7 +62,7 @@
             </div>
         </div>
         <div class="flex flex-column gap-16">
-            <div class="mt-16 flex gap-6 align-items-center">
+            <div class=" flex gap-6 align-items-center">
                 <ion-icon name="triangle" color="gold"></ion-icon>
                 <ion-text class="fs-20">Pontos de Interesse</ion-text>
             </div>

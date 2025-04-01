@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { MatIconModule } from '@angular/material/icon';
 import { DefaultHeaderComponent } from './default-header/default-header.component';
+import { DefaultModalHeaderComponent } from './default-modal-header/default-modal-header.component';
 
 
 
@@ -11,6 +12,7 @@ import { DefaultHeaderComponent } from './default-header/default-header.componen
 
 const components = [
   DefaultHeaderComponent,
+  DefaultModalHeaderComponent,
 ];
 
 @NgModule({

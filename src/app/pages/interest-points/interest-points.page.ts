@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { pointsOfInterestDatasource } from 'src/app/data/pointsOfInterestDatasource';
 
 @Component({
   selector: 'app-interest-points',
@@ -9,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class InterestPointsPage implements OnInit {
   title: string = 'Pontos de Interesse';
 
+  interestPoints: any[] = pointsOfInterestDatasource;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  openModal(data: any) {
+
+  }
+  goToCMVC() {
+    window.open('https://www.cm-viana-castelo.pt/', '_blank');
   }
 
 }
