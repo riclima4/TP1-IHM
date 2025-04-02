@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { PoiInfoComponent } from 'src/app/components/modals/poi-info/poi-info.component';
 import { pointsOfInterestDatasource } from 'src/app/data/pointsOfInterestDatasource';
 
 @Component({
@@ -12,12 +14,23 @@ export class InterestPointsPage implements OnInit {
 
   interestPoints: any[] = pointsOfInterestDatasource;
 
-  constructor() { }
+  constructor(
+    private modalCtrl: ModalController,
+  ) { }
 
   ngOnInit() {
   }
-  openModal(data: any) {
-
+  async openModal(data: any) {
+    const modal = await this.modalCtrl.create({
+      component: PoiInfoComponent,
+      focusTrap: false,
+      cssClass: 'fullscreenModal',
+      backdropDismiss: true,
+      componentProps: {
+        data: data,
+      }
+    });
+    modal.present();
   }
   goToCMVC() {
     window.open('https://www.cm-viana-castelo.pt/', '_blank');

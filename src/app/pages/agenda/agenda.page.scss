@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+}
+
+.eventImg {
+    aspect-ratio: 1/1;
+}
+
+.eventCard {
+    border: 1px solid var(--ion-color-lightgrey);
+    min-height: 120px;
+    height: 100%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
+}
+
+.eventCard:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}

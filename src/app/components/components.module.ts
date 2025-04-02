@@ -5,6 +5,8 @@ import { IonicModule } from '@ionic/angular';
 import { MatIconModule } from '@angular/material/icon';
 import { DefaultHeaderComponent } from './default-header/default-header.component';
 import { DefaultModalHeaderComponent } from './default-modal-header/default-modal-header.component';
+import { AgendaInfoComponent } from './modals/agenda-info/agenda-info.component';
+import { PoiInfoComponent } from './modals/poi-info/poi-info.component';
 
 
 
@@ -13,6 +15,8 @@ import { DefaultModalHeaderComponent } from './default-modal-header/default-moda
 const components = [
   DefaultHeaderComponent,
   DefaultModalHeaderComponent,
+  AgendaInfoComponent,
+  PoiInfoComponent
 ];
 
 @NgModule({
