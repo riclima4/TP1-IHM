@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+}
+
+.eventImg {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.16);
+    aspect-ratio: 1/1;
+
+}
+
+.eventImg:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+    transition: all 0.3s ease-in-out;
+}

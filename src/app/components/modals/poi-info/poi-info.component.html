@@ -1,4 +1,16 @@
 <app-default-modal-header [title]="title"></app-default-modal-header>
 <ion-content [fullscreen]="true" class="ion-padding">
-  <pre>{{data | json}}</pre>
+  <div class="flex flex-column justify-content-center align-items-center gap-16">
+    <ion-text class="ion-text-justify">{{data.historia}}</ion-text>
+    <div class="grid w-100">
+      <div *ngFor="let evento of data.portfolio" class="flex justify-content-center align-items-center">
+        <img class="eventImg addPointer" src="{{evento.foto}}" alt="{{evento.nome}}"
+          style="width: 100%; height: 100%; object-fit: cover; max-width: 95%;">
+      </div>
+    </div>
+    <ion-button size="small" fill="clear" color="gold" class="ion-text-capitalize"
+      (click)="openMaps(data.coordenadas)">{{data.localizacao}} <ion-icon name="map-outline" slot="end"></ion-icon>
+    </ion-button>
+
+  </div>
 </ion-content>

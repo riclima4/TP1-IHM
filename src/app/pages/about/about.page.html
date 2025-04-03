@@ -1,5 +1,63 @@
 <app-default-header [title]="title"></app-default-header>
 
 <ion-content [fullscreen]="true" class="scrollTrue">
+    <img src="/assets/images/lota.png" alt="lota" style="max-height: 150px; width: 100%; object-fit: cover; ">
+    <div class="ion-padding flex flex-column justify-content-center gap-10 ">
+        <div class="flex justify-content-center">
+            <div class="flex gap-6 align-items-center">
+                <ion-icon name="triangle" color="gold"></ion-icon>
+                <ion-text class="fs-24">Sobre</ion-text>
+            </div>
+        </div>
+        <div class="flex flex-column gap-16 justify-content-center align-items-center">
 
+            <div class="flex gap-16 w-100">
+                <div class="flex flex-column justify-content-center align-items-center gap-6 cardNumber">
+                    <ion-text color="gold" class="fb-500 fs-18">Habitantes</ion-text>
+                    <ion-text>~90.000</ion-text>
+                </div>
+                <div class="flex flex-column justify-content-center align-items-center gap-6 cardNumber">
+                    <ion-text color="gold" class="fb-500 fs-18">Área</ion-text>
+                    <ion-text>319,02 km2</ion-text>
+                </div>
+                <div class="flex flex-column justify-content-center align-items-center gap-6 cardNumber">
+                    <ion-text color="gold" class="fb-500 fs-18">Freguesias</ion-text>
+                    <ion-text>27</ion-text>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56466.29534465152!2d-8.842495229155897!3d41.710981251674504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd25b7cef6e86a73%3A0xfe4d167e5dd21dfd!2sViana%20do%20Castelo!5e1!3m2!1spt-PT!2spt!4v1743710658954!5m2!1spt-PT!2spt"
+                width="100%" height="400" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <ion-button size="small" fill="clear" color="gold" class="ion-text-capitalize"
+            (click)="goToLink('https://www.youtube.com/watch?v=RcbFuyhx_EQ&ab_channel=360portugal')">Viana 360
+        </ion-button>
+        <div class="flex justify-content-center">
+            <div class="flex gap-6 align-items-center">
+                <ion-icon name="triangle" color="gold"></ion-icon>
+                <ion-text class="fs-24">Links Úteis</ion-text>
+            </div>
+        </div>
+        <div class="flex flex-column justify-content-center align-items-center gap-10">
+            <div class="flex justify-content-center align-items-center addPointer linkCard"
+                (click)="goToLink('https://www.cm-viana-castelo.pt/')">
+                <ion-text class="fb-500">Município de Viana do Castelo</ion-text>
+            </div>
+            <div class="flex justify-content-center align-items-center addPointer linkCard"
+                (click)="goToLink('https://pt.wikipedia.org/wiki/Viana_do_Castelo')">
+                <ion-text class="fb-500">Wikipedia - Viana</ion-text>
+            </div>
+            <div class="flex justify-content-center align-items-center addPointer linkCard"
+                (click)="goToLink('https://www.ipvc.pt/')">
+                <ion-text class="fb-500">IPVC</ion-text>
+            </div>
+        </div>
+    </div>
 </ion-content>
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="openProjectInfo()" size="small">
+        <ion-icon name="information-circle-outline"></ion-icon>
+    </ion-fab-button>
+</ion-fab>

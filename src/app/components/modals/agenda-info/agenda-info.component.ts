@@ -16,4 +16,11 @@ export class AgendaInfoComponent implements OnInit {
     this.title = this.data.nome;
   }
 
+  openMaps(cords: any) {
+    const [latitude, longitude] = cords.split(',');
+    window.open(`https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`, '_blank');
+
+  }
+
+
 }

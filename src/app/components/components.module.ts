@@ -7,6 +7,7 @@ import { DefaultHeaderComponent } from './default-header/default-header.componen
 import { DefaultModalHeaderComponent } from './default-modal-header/default-modal-header.component';
 import { AgendaInfoComponent } from './modals/agenda-info/agenda-info.component';
 import { PoiInfoComponent } from './modals/poi-info/poi-info.component';
+import { ProjectInfoComponent } from './modals/project-info/project-info.component';
 
 
 
@@ -16,7 +17,8 @@ const components = [
   DefaultHeaderComponent,
   DefaultModalHeaderComponent,
   AgendaInfoComponent,
-  PoiInfoComponent
+  PoiInfoComponent,
+  ProjectInfoComponent
 ];
 
 @NgModule({
