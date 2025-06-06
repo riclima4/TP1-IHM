@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
 import { register } from 'swiper/element/bundle';
+import { SwupdaterService } from './services/utils/updates/swupdater.service';
 
 register();
 
@@ -10,5 +12,17 @@ register();
   standalone: false,
 })
 export class AppComponent {
-  constructor() { }
+  constructor(
+    private platform: Platform,
+    private sw: SwupdaterService
+  ) { }
+
+  async ngOnInit() {
+    await this.initializeApplication();
+  }
+
+  async initializeApplication() {
+    await this.platform.ready();
+    this.sw.checkForUpdates();
+  }
 }
