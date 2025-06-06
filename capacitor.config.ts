@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.vianaapp.ihm',
+  appId: 'app.viana.ihm',
   appName: 'IHM-Viana',
   webDir: 'www'
 };
